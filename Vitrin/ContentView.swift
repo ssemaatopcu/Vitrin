@@ -51,14 +51,22 @@ struct ContentView: View {
                             NavigationLink(destination: ProductDetailView(product: product)) {
                                 HStack {
                                     URLImage(urlString: product.image)
+                                        .frame(width: 160, height: 160)
+                                        .clipped()
                                     VStack(alignment: .leading) {
                                         Text(product.title)
                                             .font(.headline)
-                                        Text(product.description)
+                                        Text("$\(product.price, specifier: "%.2f")")
                                             .font(.subheadline)
-                                            .lineLimit(2)
                                     }
+                                    .padding(.leading, 5)
                                 }
+                        .padding()
+                        .background(Color.white)
+                        .overlay(
+                    RoundedRectangle(cornerRadius: 8)
+                        .stroke(Color.gray, lineWidth: 1))
+                        .padding(.bottom, 8)
                             }
                         }
                         .navigationTitle("Products")
