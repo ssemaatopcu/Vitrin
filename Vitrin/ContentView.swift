@@ -62,6 +62,7 @@ struct ContentView: View {
                             }
                         }
                         .navigationTitle("Products")
+                        .navigationBarItems(leading: Image("vitrin_app_logo").resizable().frame(width: 80, height: 50))
                         .onAppear {
                             viewModel.fetch()
                         }

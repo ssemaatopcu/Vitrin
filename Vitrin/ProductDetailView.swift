@@ -28,7 +28,6 @@ struct ProductDetailView: View {
                 Text(product.description)
                     .font(.body)
                 
-                // Add any additional information or images if available
                 Spacer()
             }
             .padding()
