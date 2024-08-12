@@ -54,19 +54,20 @@ struct ContentView: View {
                                         .frame(width: 160, height: 160)
                                         .clipped()
                                     VStack(alignment: .leading) {
-                                        Text(product.title)
-                                            .font(.headline)
+                                        Text(product.title.split(separator: " ").prefix(4).joined(separator: " "))
+                                                                       .font(.headline)
                                         Text("$\(product.price, specifier: "%.2f")")
                                             .font(.subheadline)
                                     }
                                     .padding(.leading, 5)
                                 }
-                        .padding()
-                        .background(Color.white)
-                        .overlay(
-                    RoundedRectangle(cornerRadius: 8)
-                        .stroke(Color.gray, lineWidth: 1))
-                        .padding(.bottom, 8)
+                                .frame(width: 300, height: 160)
+                                .padding()
+                                .background(Color.white)
+                                .overlay(
+                            RoundedRectangle(cornerRadius: 8)
+                                .stroke(Color.gray, lineWidth: 1))
+                                .padding(.bottom, 8)
                             }
                         }
                         .navigationTitle("Products")
