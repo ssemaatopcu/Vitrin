@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Product: Codable {
+struct Product: Codable, Identifiable {
     let id: Int
     let title: String
     let price: Double

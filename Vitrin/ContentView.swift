@@ -47,24 +47,24 @@ struct ContentView: View {
     @StateObject var viewModel = ViewModel()
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.products, id: \.id) {
-                    product in
-                    HStack {
-                        URLImage(urlString: product.image)
-                        Text(product.title)
-                            .bold()
+            List(viewModel.products) { product in
+                            NavigationLink(destination: ProductDetailView(product: product)) {
+                                HStack {
+                                    URLImage(urlString: product.image)
+                                    VStack(alignment: .leading) {
+                                        Text(product.title)
+                                            .font(.headline)
+                                        Text(product.description)
+                                            .font(.subheadline)
+                                            .lineLimit(2)
+                                    }
+                                }
+                            }
+                        }
+                        .navigationTitle("Products")
+                        .onAppear {
+                            viewModel.fetch()
+                        }
                     }
                 }
             }
-            .navigationTitle("Products")
-            .onAppear {
-                viewModel.fetch()
-            }
-        }
-    }
-}
-
-#Preview {
-    ContentView()
-}
