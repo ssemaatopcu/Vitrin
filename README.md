@@ -1,0 +1,5 @@
+## Vitrin | Product Listing App
+
+Vitrin is an application I developed using SwiftUI that integrates the [Fake Store API](https://fakestoreapi.com) . It is a product listing and detail application that allows users to list products and view their details by fetching product data via URLSession. The Home Screen provides an interface that lists product titles, prices, and images, while the Product Detail Screen presents a detailed view of the product’s information, including its name, price, description, and image. The app also features a search functionality, enabling users to easily search through products.
+
+Here are just some of the things I've covered: URLSession for fetching data from the Fake Store API, @State and @StateObject for managing state, NavigationViewand NavigationLink for navigation between views, Image and URLImage for displaying images, SearchBar for implementing search functionality, @Published and ObservableObject for handling data updates, Codable for defining the Product model and handling JSON data, and Identifiable for uniquely identifying items in a list.
