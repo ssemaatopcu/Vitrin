@@ -61,15 +61,19 @@ struct ContentView: View {
         NavigationView {
             List(filteredProducts) { product in
                 NavigationLink(destination: ProductDetailView(product: product)) {
+                    
                     HStack {
                         URLImage(urlString: product.image)
                             .frame(width: 160, height: 160)
                             .clipped()
+                        
                         VStack(alignment: .leading) {
+                            
                             Text(product.title.split(separator: " ").prefix(4).joined(separator: " "))
                                 .font(.system(size: 16, weight: .semibold))
                                 .foregroundColor(.black)
                              // .multilineTextAlignment(.center)
+                            
                             Text("$\(product.price, specifier: "%.2f")")
                                 .font(.system(size: 14))
                                 .foregroundColor(.gray)
@@ -80,16 +84,19 @@ struct ContentView: View {
                             .padding()
                             .background(Color.white)
                             .overlay(
-                                RoundedRectangle(cornerRadius: 8)
-                                    .stroke(Color.gray, lineWidth: 1))
+                                
+                        RoundedRectangle(cornerRadius: 8)
+                            .stroke(Color.gray, lineWidth: 1))
                             .padding(.bottom, 8)
                         }
                     }
                     .navigationTitle("Products")
                     .toolbar {
+                        
                         ToolbarItem(placement: .navigationBarTrailing) {
                             SearchBar(text: $searchText)
                         }
+                        
                         ToolbarItem(placement: .navigationBarLeading) {
                             Image("vitrin_app_logo")
                                 .resizable()
@@ -109,8 +116,10 @@ struct ContentView: View {
         
         var body: some View {
             HStack {
+                
                 Image(systemName: "magnifyingglass")
                     .foregroundColor(.gray)
+                
                 TextField("Search", text: $text)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
             }

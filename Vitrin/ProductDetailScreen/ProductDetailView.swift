@@ -18,13 +18,12 @@ struct ProductDetailView: View {
                 URLImage(urlString: product.image)
                     .frame(height: 200)
                     .aspectRatio(contentMode: .fit)
-                    .padding()
-                   // .cornerRadius(40)
+                    //.padding()
                                     
                 Text(product.title)
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                    .multilineTextAlignment(.center) // Center the title
+                    .multilineTextAlignment(.center)
                     .padding(.top)
                     .padding(.horizontal)
                 
@@ -40,7 +39,7 @@ struct ProductDetailView: View {
                 Text(product.description)
                     .font(.body)
                     .padding()
-                    .background(Color.gray.opacity(0.1))
+                    .background(Color.orange.opacity(0.1))
                     .cornerRadius(8)
                     .padding(.horizontal)
                 
@@ -49,5 +48,6 @@ struct ProductDetailView: View {
             .padding()
         }
         .navigationTitle("Product Details")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
