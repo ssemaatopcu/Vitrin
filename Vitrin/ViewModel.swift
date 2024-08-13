@@ -19,23 +19,28 @@ struct Product: Codable, Identifiable {
 
 class ViewModel: ObservableObject{
     
-    @Published var products: [Product] = []
+    @Published var products: [Product] = [] // List of products published to update the view
     
+    // Fetches product data from the API and updates the products list
     func fetch() {
         guard let url = URL(string:"https://fakestoreapi.com/products")
         else {
             return
         }
         
-        let task = URLSession.shared.dataTask(with: url) {
-            data, _, error in
+        // A data task to fetch data from the API
+        let task = URLSession.shared.dataTask(with: url) { data, _, error in
+            // Check if data is valid and no error occurred
             guard let data = data, error == nil
             else {
                 return
             }
             
             do {
+                // Convert JSON data to an array of `Product` objects
                 let products = try JSONDecoder().decode([Product].self, from: data)
+                
+                // Update the products list on the main thread
                 DispatchQueue.main.async {
                     self.products = products
                 }
@@ -44,6 +49,6 @@ class ViewModel: ObservableObject{
                 print(error)
             }
         }
-        task.resume()
+        task.resume() // Start the data task
     }
 }

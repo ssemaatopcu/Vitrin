@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		484E0F7B2C6B99A800D7D0F0 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484E0F7A2C6B99A700D7D0F0 /* URLImage.swift */; };
 		489B215A2C6A670F009E1F75 /* VitrinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B21592C6A670F009E1F75 /* VitrinApp.swift */; };
 		489B215C2C6A670F009E1F75 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B215B2C6A670F009E1F75 /* ContentView.swift */; };
 		489B215E2C6A6713009E1F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489B215D2C6A6713009E1F75 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		484E0F7A2C6B99A700D7D0F0 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 		489B21562C6A670F009E1F75 /* Vitrin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vitrin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		489B21592C6A670F009E1F75 /* VitrinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitrinApp.swift; sourceTree = "<group>"; };
 		489B215B2C6A670F009E1F75 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 				489B216C2C6AB86F009E1F75 /* ProductDetailScreen */,
 				489B216B2C6AB855009E1F75 /* HomeScreen */,
 				489B21592C6A670F009E1F75 /* VitrinApp.swift */,
+				484E0F7A2C6B99A700D7D0F0 /* URLImage.swift */,
 				489B21672C6A73E5009E1F75 /* ViewModel.swift */,
 				489B215D2C6A6713009E1F75 /* Assets.xcassets */,
 				489B215F2C6A6713009E1F75 /* Preview Content */,
@@ -162,6 +165,7 @@
 				489B215C2C6A670F009E1F75 /* ContentView.swift in Sources */,
 				489B216A2C6A7F1A009E1F75 /* ProductDetailView.swift in Sources */,
 				489B21682C6A73E5009E1F75 /* ViewModel.swift in Sources */,
+				484E0F7B2C6B99A800D7D0F0 /* URLImage.swift in Sources */,
 				489B215A2C6A670F009E1F75 /* VitrinApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
