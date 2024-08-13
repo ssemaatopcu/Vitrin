@@ -86,7 +86,7 @@ struct ContentView: View {
                             .overlay(
                                 
                         RoundedRectangle(cornerRadius: 8)
-                            .stroke(Color.gray, lineWidth: 1))
+                            .stroke(Color.orange, lineWidth: 1))
                             .padding(.bottom, 8)
                         }
                     }

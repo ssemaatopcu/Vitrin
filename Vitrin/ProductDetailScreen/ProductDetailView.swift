@@ -49,5 +49,6 @@ struct ProductDetailView: View {
         }
         .navigationTitle("Product Details")
         .navigationBarTitleDisplayMode(.inline)
+
     }
 }
