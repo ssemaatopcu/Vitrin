@@ -5,7 +5,7 @@
 //  Created by Sema Topcu on 8/13/24.
 //
 
-import Foundation
+// import Foundation
 import SwiftUI
 
 // A view that displays an image from a URL

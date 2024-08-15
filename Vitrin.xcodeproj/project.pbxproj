@@ -14,7 +14,19 @@
 		489B21612C6A6713009E1F75 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 489B21602C6A6713009E1F75 /* Preview Assets.xcassets */; };
 		489B21682C6A73E5009E1F75 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B21672C6A73E5009E1F75 /* ViewModel.swift */; };
 		489B216A2C6A7F1A009E1F75 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489B21692C6A7F1A009E1F75 /* ProductDetailView.swift */; };
+		48E7A62E2C6E497B00F40CE5 /* VitrinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E7A62D2C6E497B00F40CE5 /* VitrinUITests.swift */; };
+		48E7A6302C6E497B00F40CE5 /* VitrinUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E7A62F2C6E497B00F40CE5 /* VitrinUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48E7A6312C6E497B00F40CE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 489B214E2C6A670F009E1F75 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 489B21552C6A670F009E1F75;
+			remoteInfo = Vitrin;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		484E0F7A2C6B99A700D7D0F0 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
@@ -25,10 +37,20 @@
 		489B21602C6A6713009E1F75 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		489B21672C6A73E5009E1F75 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		489B21692C6A7F1A009E1F75 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		48E7A62B2C6E497B00F40CE5 /* VitrinUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VitrinUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E7A62D2C6E497B00F40CE5 /* VitrinUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitrinUITests.swift; sourceTree = "<group>"; };
+		48E7A62F2C6E497B00F40CE5 /* VitrinUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VitrinUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		489B21532C6A670F009E1F75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E7A6282C6E497B00F40CE5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				489B21582C6A670F009E1F75 /* Vitrin */,
+				48E7A62C2C6E497B00F40CE5 /* VitrinUITests */,
 				489B21572C6A670F009E1F75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				489B21562C6A670F009E1F75 /* Vitrin.app */,
+				48E7A62B2C6E497B00F40CE5 /* VitrinUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +116,15 @@
 			path = ProductDetailScreen;
 			sourceTree = "<group>";
 		};
+		48E7A62C2C6E497B00F40CE5 /* VitrinUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48E7A62D2C6E497B00F40CE5 /* VitrinUITests.swift */,
+				48E7A62F2C6E497B00F40CE5 /* VitrinUITestsLaunchTests.swift */,
+			);
+			path = VitrinUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +145,24 @@
 			productReference = 489B21562C6A670F009E1F75 /* Vitrin.app */;
 			productType = "com.apple.product-type.application";
 		};
+		48E7A62A2C6E497B00F40CE5 /* VitrinUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E7A6352C6E497B00F40CE5 /* Build configuration list for PBXNativeTarget "VitrinUITests" */;
+			buildPhases = (
+				48E7A6272C6E497B00F40CE5 /* Sources */,
+				48E7A6282C6E497B00F40CE5 /* Frameworks */,
+				48E7A6292C6E497B00F40CE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48E7A6322C6E497B00F40CE5 /* PBXTargetDependency */,
+			);
+			name = VitrinUITests;
+			productName = VitrinUITests;
+			productReference = 48E7A62B2C6E497B00F40CE5 /* VitrinUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -124,6 +175,10 @@
 				TargetAttributes = {
 					489B21552C6A670F009E1F75 = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					48E7A62A2C6E497B00F40CE5 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 489B21552C6A670F009E1F75;
 					};
 				};
 			};
@@ -141,6 +196,7 @@
 			projectRoot = "";
 			targets = (
 				489B21552C6A670F009E1F75 /* Vitrin */,
+				48E7A62A2C6E497B00F40CE5 /* VitrinUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -152,6 +208,13 @@
 			files = (
 				489B21612C6A6713009E1F75 /* Preview Assets.xcassets in Resources */,
 				489B215E2C6A6713009E1F75 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E7A6292C6E497B00F40CE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +233,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		48E7A6272C6E497B00F40CE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E7A6302C6E497B00F40CE5 /* VitrinUITestsLaunchTests.swift in Sources */,
+				48E7A62E2C6E497B00F40CE5 /* VitrinUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48E7A6322C6E497B00F40CE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 489B21552C6A670F009E1F75 /* Vitrin */;
+			targetProxy = 48E7A6312C6E497B00F40CE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		489B21622C6A6713009E1F75 /* Debug */ = {
@@ -350,6 +430,40 @@
 			};
 			name = Release;
 		};
+		48E7A6332C6E497B00F40CE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D335R9U8V5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sematopcu.VitrinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vitrin;
+			};
+			name = Debug;
+		};
+		48E7A6342C6E497B00F40CE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = D335R9U8V5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sematopcu.VitrinUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Vitrin;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -367,6 +481,15 @@
 			buildConfigurations = (
 				489B21652C6A6713009E1F75 /* Debug */,
 				489B21662C6A6713009E1F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E7A6352C6E497B00F40CE5 /* Build configuration list for PBXNativeTarget "VitrinUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E7A6332C6E497B00F40CE5 /* Debug */,
+				48E7A6342C6E497B00F40CE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

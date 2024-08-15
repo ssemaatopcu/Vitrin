@@ -5,7 +5,7 @@
 //  Created by Sema Topcu on 8/12/24.
 //
 
-import Foundation
+//import Foundation
 import SwiftUI
 
 struct Product: Codable, Identifiable {
